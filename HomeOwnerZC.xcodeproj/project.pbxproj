@@ -15,6 +15,7 @@
 		5903FB2F27EC19480040C802 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5903FB2E27EC19480040C802 /* ItemsViewController.swift */; };
 		5903FB3127EC1BC10040C802 /* ItemModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5903FB3027EC1BC10040C802 /* ItemModelClass.swift */; };
 		5903FB3327EC1F360040C802 /* ItemDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5903FB3227EC1F360040C802 /* ItemDataStore.swift */; };
+		5903FB3527EFA8F30040C802 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5903FB3427EFA8F30040C802 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5903FB2E27EC19480040C802 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		5903FB3027EC1BC10040C802 /* ItemModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelClass.swift; sourceTree = "<group>"; };
 		5903FB3227EC1F360040C802 /* ItemDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataStore.swift; sourceTree = "<group>"; };
+		5903FB3427EFA8F30040C802 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5903FB1827EC18710040C802 /* AppDelegate.swift */,
 				5903FB1A27EC18710040C802 /* SceneDelegate.swift */,
 				5903FB1E27EC18710040C802 /* Main.storyboard */,
+				5903FB3427EFA8F30040C802 /* ItemCell.swift */,
 				5903FB2E27EC19480040C802 /* ItemsViewController.swift */,
 				5903FB3027EC1BC10040C802 /* ItemModelClass.swift */,
 				5903FB3227EC1F360040C802 /* ItemDataStore.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				5903FB2F27EC19480040C802 /* ItemsViewController.swift in Sources */,
 				5903FB3127EC1BC10040C802 /* ItemModelClass.swift in Sources */,
+				5903FB3527EFA8F30040C802 /* ItemCell.swift in Sources */,
 				5903FB1927EC18710040C802 /* AppDelegate.swift in Sources */,
 				5903FB3327EC1F360040C802 /* ItemDataStore.swift in Sources */,
 				5903FB1B27EC18710040C802 /* SceneDelegate.swift in Sources */,

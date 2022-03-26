@@ -15,11 +15,18 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         
         let item = itemStore.allItems[indexPath.row]
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$" + String(item.valueInDollars)
+        cell.nameLabel.text = item.name
+        cell.serialNumberLabel.text = item.serialNumber
+        cell.valueLabel.text = "$" + String(item.valueInDollars)
+        if item.valueInDollars < 50 {
+            cell.valueLabel.textColor = .green
+        }
+        else {
+            cell.valueLabel.textColor = .red
+        }
         
         return cell
     }
@@ -68,5 +75,11 @@ class ItemsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 65
     }
 }
