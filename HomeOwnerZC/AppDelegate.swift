@@ -9,11 +9,18 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+//    let itemStore = ItemStore()
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let navController = window?.UIViewController() as! UINavigationController
+//        let itemsController = navController.topViewController as! ItemsViewController
+//        itemsController.itemStore = itemStore
+//
         return true
     }
 
